@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen Argentina - Contacto</title>
+    <!-- Link a css externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link a tipografia de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="gridBody">
+    <!-- Aqui comienza el header -->
+    <header id="header" class="header-container">
+        <div>
+            <a href="index.html" id="logo">queen <span style="color:red">argentina</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="discografia.html">Discografía</a></li>
+                <!-- <li><a href="videografia.html">Videografía</a></li> -->
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Aqui comienza el main -->
+    <main class="gridMain">
+        <section class="gridBioSection">
+            <h1 class="tituloPrincipal">Contacto</h1>
+            <p class="bioTexto" style="text-align: center;">¿Querés colaborar en nuestra comunidad Queenera en Argentina?<br></p>
+        </section>
+        <section class="gridBioSection">
+            <h2 class="bioTitulo"></h2>
+        </section>
+        <section>
+            <p class="bioTexto" style="text-align: center;">Completá este formulario y dejanos un mensaje, ¡Te contactaremos en breve!</p>
+            <form action="" method="post" id="formulario" class="gridContacto">
+                <!-- <label for="nombre">Nombre:</label> -->
+                <input type="text" name="nombre" placeholder="Nombre" style="grid-area: nombre;" class="contactoInputs">
+                <!-- <label for="apellido">Apellido:</label> -->
+                <input type="text" name="apellido" placeholder="Apellido" style="grid-area: apellido;" class="contactoInputs">
+                <!-- <label for="mail">E-Mail:</label> -->
+                <input type="E-Mail" name="mail" placeholder="E-Mail" style="grid-area: email;" class="contactoInputs">
+                <!-- <label for="telefono">Telefono:</label> -->
+                <input type="number" name="telefono" placeholder="Teléfono" style="grid-area: telefono;" class="contactoInputs">
+                <div style="grid-area: genero;">
+                    <label for="genero" class="inputInlineBlock">Genero:</label>
+                    <select name="genero" id="" class="inputInlineBlock">
+                        <option value="Mujer">Mujer</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Otros">Otros</option>
+                    </select><br>
+                </div>
+                <div style="grid-area: newsletter;">
+                    <label for="newsletter" class="inputInlineBlock">¿Desea recibir nuestro newsletter?</label>
+                    <input type="checkbox" name="newsletter" value="1" class="inputInlineBlock">
+                </div>
+                <!-- <label for="mensaje">Mensaje:</label><br> -->
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" style="grid-area: mensaje;" class="contactoInputs"></textarea>
+                <input type="submit" name="Enviar" style="grid-area: enviar;" class="contactoInputs">
+                <input type="reset" name="Limpiar Formulario" style="grid-area: resetear;" class="contactoInputs">
+            </form>
+        </section>
+        <div>
+    </main>
+    <!-- Aqui comienza el footer -->
+    <footer class="gridFooter">
+        <div class="footer-main-item" style="grid-area: item1">
+            <a href="http://www.queenonline.com" class="footer-main-item-title">queen online</span></a>
+            <p class="footer-main-item-text">Sitio oficial de Queen</p>
+        </div>
+        <div class="footer-main-item" style="grid-area: item2">
+            <a href="http://www.freddiemercury.com/" class="footer-main-item-title">freddie mercury</span></a>
+            <p class="footer-main-item-text">Sitio Oficial</p>
+        </div>
+        <div class="footer-main-item" style="grid-area: item3">
+            <a href="http://www.brianmay.com" class="footer-main-item-title">brian may</span></a>
+            <p class="footer-main-item-text">Sitio Oficial</p>
+        </div>
+        <div class="footer-main-item" style="grid-area: item4">
+            <a href="http://www.rogertaylorofficial.com/" class="footer-main-item-title">roger taylor</span></a>
+            <p class="footer-main-item-text">Sitio Oficial</p>
+        </div>
+        <section class="footer-social" style="grid-area: redesSociales">
+            <ul class="footer-social-list">
+                <li><a href="https://www.facebook.com/queenfanclubargentina"><img src="images/icon/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/queenfcarg"><img src="images/icon/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://twitter.com/queenfcarg"><img src="images/icon/twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.youtube.com/channel/UC4qQ6IEM1LsH1ra_JzzcmQg"><img src="images/icon/youtube.png" alt="Youtube"></a></li>
+            </ul>
+        </section>
+        <section id="footer-copyright" style="grid-area: copyright">
+            <ul class="footer-copyright-list">
+                <li>
+                    <p class="copyright">@ 2021 Copyright Ariel Natale</p>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

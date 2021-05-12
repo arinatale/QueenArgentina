@@ -1,0 +1,412 @@
+/*Formateo de CSS*/
+* {
+    Margin: 0;
+    padding: 0;
+}
+
+/*Formateo general de tipografía y background color*/
+body {
+    background-color: #141414;
+    font-family: 'Bodoni Moda', serif;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Formateo al Header*/
+header {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    grid-area: header;
+    background-image: linear-gradient(to bottom, #343534, #141414)
+}
+
+header ul {
+    list-style: none;
+    float: right;
+    display: block;
+}
+
+header li {
+    margin: 10px 8px 8px 8px;
+    display: inline-block;
+}
+
+header li a {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 80%;
+    text-decoration: none;
+    font-style: normal;
+}
+
+header li a:hover {
+    color: red;
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container div {
+    align-items: center;
+    justify-content: center;
+}
+
+/*Formateo del logo*/
+#logo {
+    color: white;
+    text-align: left;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+/*Formateo al Footer*/
+footer {
+    text-decoration: none;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to bottom, #141414, black);
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+}
+
+footer div {
+    margin: 15px;
+}
+
+footer section a img {
+    height: 32px;
+}
+
+.footer-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+    width: 25%;
+    text-align: center;
+}
+
+.footer-social {
+    padding: 0 1.875rem 1.25rem;
+    width: 80%;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+
+.footer-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+    display: block;
+}
+
+.footer-copyright {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+
+.copyright {
+    color: red;
+    font-size: 60%;
+}
+
+.footer-copyright-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-copyright-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+
+.footer-main-item-title {
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-main-item-text {
+    color: red;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+/*Formato de selectores*/
+h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 3px;
+    padding: 20px 0 30px 0;
+}
+
+p {
+    color: white;
+    padding: 8px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section p {
+    text-align: justify;
+}
+
+/*Formato de tablas*/
+.table-disco {
+    border: 3px solid;
+    border-color: red;
+    margin: auto;
+}
+
+.table-disco li {
+    margin: 15px;
+}
+
+.table-disco th {
+    text-align: center;
+    background-color: #400000;
+    font-style: oblique;
+    border: 1px solid;
+}
+
+.table-disco tr,
+td {
+    border: 1px solid;
+    text-align: center;
+    padding: 8px;
+}
+
+td img {
+    width: 300px;
+}
+
+.table-galeria {
+    border: 0px;
+    margin: auto;
+}
+
+.table-galeria th,
+.table-galeria tr,
+.table-galeria td {
+    border: 0px;
+}
+
+/*Display Block & Inline-Block*/
+.inputBlock {
+    padding: 8px;
+    margin: 8px 8px 8px 16px;
+    display: block;
+    border: none;
+}
+
+.inputInlineBlock {
+    padding: 8px;
+    margin: 8px 8px 8px 16px;
+    display: inline-block;
+    border: none;
+}
+
+.container {
+    flex: 1;
+    /* same as flex-grow: 1; */
+}
+
+/* Flex*/
+.bio-section {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.bio-section iframe {
+
+    border-style: none;
+    width: 200%;
+}
+
+.bio-section p {
+    padding: 20px;
+    ;
+}
+
+.bio-section h2 {
+    padding: 20px;
+}
+
+.contactoSection {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*Grids*/
+.gridBody {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    margin: 0;
+}
+
+.gridMain {
+    grid-area: main;
+}
+
+.gridFooter {
+    display: grid;
+    grid-template-areas:
+        "item1 item2 item3 item4"
+        "redesSociales redesSociales redesSociales redesSociales"
+        "copyright copyright copyright copyright";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0;
+    justify-items: center;
+    font-size: 150%;
+}
+
+.gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridDiscografia {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.gridContacto {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+        "nombre apellido"
+        "email telefono"
+        "genero newsletter"
+        "mensaje mensaje"
+        "enviar resetear";
+    justify-content: center;
+    align-items: center;
+}
+
+.gridBioSection {
+    display: grid;
+    grid-template-areas:
+        "bioTitulo"
+        "bioTexto"
+        "bioVideo";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin: 0;
+    padding: 0 10% 0 10%;
+}
+
+.bioTitulo {
+    grid-area: bioTitulo;
+    border-top: 1px white solid;
+}
+
+.bioTexto {
+    grid-area: bioTexto;
+    padding: 10px 0 30px 0;
+
+}
+
+.bioVideo {
+    grid-area: bioVideo;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 auto 30px auto;
+}
+
+.bioVideo iframe {
+    display: block;
+    width: 900px;
+    height: 600px;
+    padding: 0 0 30px 0;
+}
+
+/*Formato otros*/
+.tituloPrincipal {
+    color: white;
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 3px;
+    padding: 30px 0 20px 0;
+}
+
+.contactoInputs {
+    padding: 8px;
+    margin: 8px 8px 8px 16px;
+    display: block;
+    border: none;
+}
+
+.background-image {
+    min-width: 100%;
+    height: auto;
+}
+
+.galery-img {
+    width: 100%;
+}
+
+.galery-iframe {
+    justify-self: center;
+}
