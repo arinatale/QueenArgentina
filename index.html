@@ -5,72 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queen Argentina</title>
-    <!-- Link a css externo -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Link a tipografia de Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <!-- Link a iconos de Google Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Link a css externo -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="gridBody">
+<body>
     <!-- Aqui comienza el header -->
-    <header id="header" class="header-container">
-        <div>
-            <a href="index.html" id="logo">queen <span style="color:red">argentina</span></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="biografia.html">Biografía</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="discografia.html">Discografía</a></li>
-                <!-- <li><a href="videografia.html">Videografía</a></li> -->
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark headerColor leftToRight">
+            <a href="index.html" class="navbar-brand" id="logo">queen <span style="color:red">argentina</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-<!-- Aqui comienza el main -->
-    <main class="gridMain">
-        <div>
-            <img class="background-image" src="images/front-image-1200.jpg" alt="queen-en-velez">
-        </div>
+    <!-- Aqui comienza el main -->
+    <main>
+        <section id="fotoPrincipal" class="mainPhoto-container">
+            <div class="mainPhoto"></div>
+            <div class="mainPhoto-stuff">
+            </div>
+        </section>
+        <section id="contenidoIndex">
+            <div id="container-1" class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle leftToRight" src="images/log01.jpg" alt="queen-sheraton" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 rightToLeft">
+                        <div class="p-5">
+                            <h2 class="display-4 vert-move">La fiebre por la Reina</h2>
+                            <p>Queen en nuestro país brindó cinco recitales: tres en el estadio de Vélez, uno en Mar del Plata y otro en Rosario. El éxito fue rotundo. Nunca antes los argentinos habíamos tenido un espectáculo de tales características, porque fue un show más que un recital, por el despliegue tanto escenográfico como técnico, sonido, parrillas de luces nunca antes vistas, fuegos artificiales y obviamente por la actuación histriónica del gran Freddie con una personalidad y glam que no se veía mucho por acá.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container-2" class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle rightToLeft" src="images/log02.jpg" alt="queen-en-velez" /></div>
+                    </div>
+                    <div class="col-lg-6 leftToRight">
+                        <div class="p-5">
+                            <h2 class="display-4 vert-move">Referentes de un rock disruptivo</h2>
+                            <p>Es curioso que en aquel momento si bien Queen tenía una muy buena base de fans en Argentina, habían algunos estamentos del rock que todavía no apostaban a ellos porque los consideraban demasiado glamorosos, en una órbita muy profesional pero a la vez un poco fría. Cuando llegaron a nuestro país, rompieron aún más los prejuicios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="container-3" class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle leftToRight" src="images/log03.jpg" alt="queen-maradona" /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 rightToLeft">
+                        <div class="p-5">
+                            <h2 class="display-4 vert-move">El encuentro con el Diego</h2>
+                            <p>Para cerrar, en el último concierto que realizaron el 8 de marzo y como frutilla de su visita, dejaron una de las fotos más icónicas cuando dos potencias se saludaron: Queen y Diego Armando Maradona. Freddie reingresó al escenario con la camiseta de la selección argentina y se dirigió al público en inglés: "Quiero presentarles a un amigo de ustedes: Maradona". Las grabaciones piratas permiten escuchar la locura del público con algunos "Maradooo, Maradooo". Diego en el esplendor de su juventud, subió al escenario con un jogging y una remera azul. El astro dijo: "Le quiero agradecer a Freddie y a los Queen por hacerme tan feliz. Y ahora Otro muerde el polvo".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Aqui comienza el footer -->
-    <footer class="gridFooter">
-        <div class="footer-main-item" style="grid-area: item1">
-            <a href="http://www.queenonline.com" class="footer-main-item-title">queen online</span></a>
-            <p class="footer-main-item-text">Sitio oficial de Queen</p>
+    <footer class="pt-4 pt-md-5 border-top upToDown">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <small class="d-block mb-3 text-muted">@ Ariel Natale</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Queen</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.queenonline.com/">Official Site</a></li>
+                        <li><a class="text-muted" href="https://www.queenworld.com/">Official Fan Club</a></li>
+                        <li><a class="text-muted" href="https://www.queenonlinestore.com/">Queen Online Store</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Solistas</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.freddiemercury.com/">Freddie Mercury</a></li>
+                        <li><a class="text-muted" href="https://brianmay.com/">Brian May</a></li>
+                        <li><a class="text-muted" href="https://www.rogertaylorofficial.com/">Roger Taylor</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.facebook.com/queenfanclubargentina">Facebook</a></li>
+                        <li><a class="text-muted" href="https://www.instagram.com/queenfcarg">Instagram</a></li>
+                        <li><a class="text-muted" href="https://twitter.com/queenfcarg">Twitter</a></li>
+                        <li><a class="text-muted" href="https://www.youtube.com/channel/UC4qQ6IEM1LsH1ra_JzzcmQg">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer-main-item" style="grid-area: item2">
-            <a href="http://www.freddiemercury.com/" class="footer-main-item-title">freddie mercury</span></a>
-            <p class="footer-main-item-text">Sitio Oficial</p>
-        </div>
-        <div class="footer-main-item" style="grid-area: item3">
-            <a href="http://www.brianmay.com" class="footer-main-item-title">brian may</span></a>
-            <p class="footer-main-item-text">Sitio Oficial</p>
-        </div>
-        <div class="footer-main-item" style="grid-area: item4">
-            <a href="http://www.rogertaylorofficial.com/" class="footer-main-item-title">roger taylor</span></a>
-            <p class="footer-main-item-text">Sitio Oficial</p>
-        </div>
-        <section class="footer-social" style="grid-area: redesSociales">
-            <ul class="footer-social-list">
-                <li><a href="https://www.facebook.com/queenfanclubargentina"><img src="images/icon/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/queenfcarg"><img src="images/icon/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://twitter.com/queenfcarg"><img src="images/icon/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://www.youtube.com/channel/UC4qQ6IEM1LsH1ra_JzzcmQg"><img src="images/icon/youtube.png" alt="Youtube"></a></li>
-            </ul>
-        </section>
-        <section id="footer-copyright" style="grid-area: copyright">
-            <ul class="footer-copyright-list">
-                <li>
-                    <p class="copyright">@ 2021 Copyright Ariel Natale</p>
-                </li>
-            </ul>
-        </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    </script>
 </body>
 
 </html>

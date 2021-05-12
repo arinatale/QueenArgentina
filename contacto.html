@@ -1,107 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>    <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queen Argentina - Contacto</title>
-    <!-- Link a css externo -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Link a tipografia de Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Link a iconos de Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Link a css externo -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="gridBody">
+<body>
     <!-- Aqui comienza el header -->
-    <header id="header" class="header-container">
-        <div>
-            <a href="index.html" id="logo">queen <span style="color:red">argentina</span></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="biografia.html">Biografía</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="discografia.html">Discografía</a></li>
-                <!-- <li><a href="videografia.html">Videografía</a></li> -->
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark headerColor leftToRight">
+            <a href="index.html" class="navbar-brand" id="logo">queen <span style="color:red">argentina</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- Aqui comienza el main -->
-    <main class="gridMain">
-        <section class="gridBioSection">
-            <h1 class="tituloPrincipal">Contacto</h1>
-            <p class="bioTexto" style="text-align: center;">¿Querés colaborar en nuestra comunidad Queenera en Argentina?<br></p>
+    <main>
+        <section id="titulo" class="upToDown">
+            <div class="container p-5">
+                <h2 class="display-4 vert-move">Contacto</h2>
+            </div>
+            <div class="gridBioSection">
+                <h2 class="bioTitulo"></h2>
+            </div>
         </section>
-        <section class="gridBioSection">
-            <h2 class="bioTitulo"></h2>
+        <section class="container upToDown">
+            <div class="row ">
+                <div class="col-lg-7 mx-auto">
+                    <div class="card mt-2 mx-auto p-4">
+                        <div class="card-body">
+                            <div class="container">
+                                <form id="contact-form" role="form">
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label for="form_name">Nombre *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Nombre" required="required" data-error="El nombre es un campo obligatorio"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label for="form_lastname">Apellido *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Apellido" required="required" data-error="El apellido es un campo obligatorio"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Correo Electronico" required="required" data-error="El E-mail ingresado no es valido"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group"> <label for="form_genero">Genero</label> <select id="form_genero" name="need" class="form-control" required="required" data-error="Genero">
+                                                        <option value="" selected disabled>Genero</option>
+                                                        <option>Femenino</option>
+                                                        <option>Masculino</option>
+                                                        <option>Prefiero no decirlo</option>
+                                                    </select> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group"> <label for="form_message">Mensaje</label> <textarea id="form_message" name="message" class="form-control" placeholder="Dejanos tu mensaje acá" rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                                            </div>
+                                            <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send Message"> </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div> <!-- /.8 -->
+                </div> <!-- /.row-->
+            </div>
         </section>
-        <section>
-            <p class="bioTexto" style="text-align: center;">Completá este formulario y dejanos un mensaje, ¡Te contactaremos en breve!</p>
-            <form action="" method="post" id="formulario" class="gridContacto">
-                <!-- <label for="nombre">Nombre:</label> -->
-                <input type="text" name="nombre" placeholder="Nombre" style="grid-area: nombre;" class="contactoInputs">
-                <!-- <label for="apellido">Apellido:</label> -->
-                <input type="text" name="apellido" placeholder="Apellido" style="grid-area: apellido;" class="contactoInputs">
-                <!-- <label for="mail">E-Mail:</label> -->
-                <input type="E-Mail" name="mail" placeholder="E-Mail" style="grid-area: email;" class="contactoInputs">
-                <!-- <label for="telefono">Telefono:</label> -->
-                <input type="number" name="telefono" placeholder="Teléfono" style="grid-area: telefono;" class="contactoInputs">
-                <div style="grid-area: genero;">
-                    <label for="genero" class="inputInlineBlock">Genero:</label>
-                    <select name="genero" id="" class="inputInlineBlock">
-                        <option value="Mujer">Mujer</option>
-                        <option value="Hombre">Hombre</option>
-                        <option value="Otros">Otros</option>
-                    </select><br>
-                </div>
-                <div style="grid-area: newsletter;">
-                    <label for="newsletter" class="inputInlineBlock">¿Desea recibir nuestro newsletter?</label>
-                    <input type="checkbox" name="newsletter" value="1" class="inputInlineBlock">
-                </div>
-                <!-- <label for="mensaje">Mensaje:</label><br> -->
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" style="grid-area: mensaje;" class="contactoInputs"></textarea>
-                <input type="submit" name="Enviar" style="grid-area: enviar;" class="contactoInputs">
-                <input type="reset" name="Limpiar Formulario" style="grid-area: resetear;" class="contactoInputs">
-            </form>
-        </section>
-        <div>
     </main>
     <!-- Aqui comienza el footer -->
-    <footer class="gridFooter">
-        <div class="footer-main-item" style="grid-area: item1">
-            <a href="http://www.queenonline.com" class="footer-main-item-title">queen online</span></a>
-            <p class="footer-main-item-text">Sitio oficial de Queen</p>
+    <footer class="pt-4 pt-md-5 border-top upToDown">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <small class="d-block mb-3 text-muted">@ Ariel Natale</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Queen</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.queenonline.com/">Official Site</a></li>
+                        <li><a class="text-muted" href="https://www.queenworld.com/">Official Fan Club</a></li>
+                        <li><a class="text-muted" href="https://www.queenonlinestore.com/">Queen Online Store</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Solistas</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.freddiemercury.com/">Freddie Mercury</a></li>
+                        <li><a class="text-muted" href="https://brianmay.com/">Brian May</a></li>
+                        <li><a class="text-muted" href="https://www.rogertaylorofficial.com/">Roger Taylor</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.facebook.com/queenfanclubargentina">Facebook</a></li>
+                        <li><a class="text-muted" href="https://www.instagram.com/queenfcarg">Instagram</a></li>
+                        <li><a class="text-muted" href="https://twitter.com/queenfcarg">Twitter</a></li>
+                        <li><a class="text-muted" href="https://www.youtube.com/channel/UC4qQ6IEM1LsH1ra_JzzcmQg">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer-main-item" style="grid-area: item2">
-            <a href="http://www.freddiemercury.com/" class="footer-main-item-title">freddie mercury</span></a>
-            <p class="footer-main-item-text">Sitio Oficial</p>
-        </div>
-        <div class="footer-main-item" style="grid-area: item3">
-            <a href="http://www.brianmay.com" class="footer-main-item-title">brian may</span></a>
-            <p class="footer-main-item-text">Sitio Oficial</p>
-        </div>
-        <div class="footer-main-item" style="grid-area: item4">
-            <a href="http://www.rogertaylorofficial.com/" class="footer-main-item-title">roger taylor</span></a>
-            <p class="footer-main-item-text">Sitio Oficial</p>
-        </div>
-        <section class="footer-social" style="grid-area: redesSociales">
-            <ul class="footer-social-list">
-                <li><a href="https://www.facebook.com/queenfanclubargentina"><img src="images/icon/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/queenfcarg"><img src="images/icon/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://twitter.com/queenfcarg"><img src="images/icon/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://www.youtube.com/channel/UC4qQ6IEM1LsH1ra_JzzcmQg"><img src="images/icon/youtube.png" alt="Youtube"></a></li>
-            </ul>
-        </section>
-        <section id="footer-copyright" style="grid-area: copyright">
-            <ul class="footer-copyright-list">
-                <li>
-                    <p class="copyright">@ 2021 Copyright Ariel Natale</p>
-                </li>
-            </ul>
-        </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    </script>
 </body>
 
 </html>

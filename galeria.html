@@ -5,83 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queen Argentina - Galería</title>
-    <!-- Link a css externo -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- Link a tipografia de Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Link a iconos de Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Link a css externo -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="gridBody">
+<body>
     <!-- Aqui comienza el header -->
-    <header id="header" class="header-container">
-        <div>
-            <a href="index.html" id="logo">queen <span style="color:red">argentina</span></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="biografia.html">Biografía</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="discografia.html">Discografía</a></li>
-                <!-- <li><a href="videografia.html">Videografía</a></li> -->
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark headerColor leftToRight">
+            <a href="index.html" class="navbar-brand" id="logo">queen <span style="color:red">argentina</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="discografia.html">Discografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- Aqui comienza el main -->
-    <main class="gridMain">
-        <section class="gridBioSection">
-            <h1 class="tituloPrincipal">Galería</h1>
-            <p class="bioTexto" style="text-align: center;">Mirá las fotos de la visita de Queen en Argentina en el año 1981</p>
-        </section>
-        <div>
-            <section class="gridBioSection">
+    <main>
+        <section id="titulo" class="upToDown">
+            <div class="container p-5">
+                <h2 class="display-4 vert-move">Galería</h2>
+            </div>
+            <div class="gridBioSection">
                 <h2 class="bioTitulo"></h2>
-            </section>
-            <section class="gridGaleria">
-                <img class="galery-img" src="images/galeria/queen-bsas-01.jpg" alt="queen-bsas-01">
-                <img class="galery-img" src="images/galeria/queen-bsas-02.jpg" alt="queen-bsas-02">
-                <img class="galery-img" src="images/galeria/queen-bsas-03.jpg" alt="queen-bsas-03">
-                <img class="galery-img" src="images/galeria/queen-bsas-04.jpg" alt="queen-bsas-04">
-                <img class="galery-img" src="images/galeria/queen-bsas-05.jpg" alt="queen-bsas-05">
-                <img class="galery-img" src="images/galeria/queen-bsas-06.jpg" alt="queen-bsas-06">
-            </section>
-            <br>
-            <!-- Aqui comienza el footer -->
-            <footer class="gridFooter">
-                <div class="footer-main-item" style="grid-area: item1">
-                    <a href="http://www.queenonline.com" class="footer-main-item-title">queen online</span></a>
-                    <p class="footer-main-item-text">Sitio oficial de Queen</p>
+            </div>
+        </section>
+        <section id="galeria">
+            <div class="container">
+                <div class="row">
+                    <a href="images/galeria/queen-bsas-01.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 upToDown">
+                        <img src="images/galeria/queen-bsas-01.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="images/galeria/queen-bsas-02.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 downToUp">
+                        <img src="images/galeria/queen-bsas-02.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="images/galeria/queen-bsas-03.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 upToDown">
+                        <img src="images/galeria/queen-bsas-03.jpg" class="img-fluid rounded">
+                    </a>
                 </div>
-                <div class="footer-main-item" style="grid-area: item2">
-                    <a href="http://www.freddiemercury.com/" class="footer-main-item-title">freddie mercury</span></a>
-                    <p class="footer-main-item-text">Sitio Oficial</p>
+                <div class="row">
+                    <a href="images/galeria/queen-bsas-04.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 downToUp">
+                        <img src="images/galeria/queen-bsas-04.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="images/galeria/queen-bsas-05.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 upToDown">
+                        <img src="images/galeria/queen-bsas-05.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="images/galeria/queen-bsas-06.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 downToUp">
+                        <img src="images/galeria/queen-bsas-06.jpg" class="img-fluid rounded">
+                    </a>
                 </div>
-                <div class="footer-main-item" style="grid-area: item3">
-                    <a href="http://www.brianmay.com" class="footer-main-item-title">brian may</span></a>
-                    <p class="footer-main-item-text">Sitio Oficial</p>
+                <div class="row">
+                    <a href="images/galeria/queen-bsas-07.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 upToDown">
+                        <img src="images/galeria/queen-bsas-07.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="images/galeria/queen-bsas-08.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 downToUp">
+                        <img src="images/galeria/queen-bsas-08.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="images/galeria/queen-bsas-09.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 upToDown">
+                        <img src="images/galeria/queen-bsas-09.jpg" class="img-fluid rounded">
+                    </a>
                 </div>
-                <div class="footer-main-item" style="grid-area: item4">
-                    <a href="http://www.rogertaylorofficial.com/" class="footer-main-item-title">roger taylor</span></a>
-                    <p class="footer-main-item-text">Sitio Oficial</p>
+            </div>
+        </section>
+    </main>
+    <!-- Aqui comienza el footer -->
+    <footer class="pt-4 pt-md-5 border-top upToDown">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <small class="d-block mb-3 text-muted">@ Ariel Natale</small>
                 </div>
-                <section class="footer-social" style="grid-area: redesSociales">
-                    <ul class="footer-social-list">
-                        <li><a href="https://www.facebook.com/queenfanclubargentina"><img src="images/icon/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="https://www.instagram.com/queenfcarg"><img src="images/icon/instagram.png" alt="Instagram"></a></li>
-                        <li><a href="https://twitter.com/queenfcarg"><img src="images/icon/twitter.png" alt="Twitter"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC4qQ6IEM1LsH1ra_JzzcmQg"><img src="images/icon/youtube.png" alt="Youtube"></a></li>
+                <div class="col-6 col-md">
+                    <h5>Queen</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.queenonline.com/">Official Site</a></li>
+                        <li><a class="text-muted" href="https://www.queenworld.com/">Official Fan Club</a></li>
+                        <li><a class="text-muted" href="https://www.queenonlinestore.com/">Queen Online Store</a></li>
                     </ul>
-                </section>
-                <section id="footer-copyright" style="grid-area: copyright">
-                    <ul class="footer-copyright-list">
-                        <li>
-                            <p class="copyright">@ 2021 Copyright Ariel Natale</p>
-                        </li>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Solistas</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.freddiemercury.com/">Freddie Mercury</a></li>
+                        <li><a class="text-muted" href="https://brianmay.com/">Brian May</a></li>
+                        <li><a class="text-muted" href="https://www.rogertaylorofficial.com/">Roger Taylor</a></li>
                     </ul>
-                </section>
-            </footer>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.facebook.com/queenfanclubargentina">Facebook</a></li>
+                        <li><a class="text-muted" href="https://www.instagram.com/queenfcarg">Instagram</a></li>
+                        <li><a class="text-muted" href="https://twitter.com/queenfcarg">Twitter</a></li>
+                        <li><a class="text-muted" href="https://www.youtube.com/channel/UC4qQ6IEM1LsH1ra_JzzcmQg">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    </script>
 </body>
 
 </html>

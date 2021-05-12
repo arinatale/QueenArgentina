@@ -1,30 +1,31 @@
-/*Formateo de CSS*/
 * {
     Margin: 0;
     padding: 0;
+
 }
 
 /*Formateo general de tipografía y background color*/
 body {
     background-color: #141414;
-    font-family: 'Bodoni Moda', serif;
+    /*font-family: 'Bodoni Moda', serif;*/
     font-style: normal;
     color: white;
     display: flex;
     flex-direction: column;
+
 }
 
 /*Formateo al Header*/
 header {
-    text-transform: uppercase;
+    /*text-transform: uppercase;
     font-weight: bold;
     background-color: black;
     padding: 10px;
-    grid-area: header;
+    grid-area: header;*/
     background-image: linear-gradient(to bottom, #343534, #141414)
 }
 
-header ul {
+/*header ul {
     list-style: none;
     float: right;
     display: block;
@@ -33,15 +34,15 @@ header ul {
 header li {
     margin: 10px 8px 8px 8px;
     display: inline-block;
-}
+}*/
 
-header li a {
+/*header li a {
     color: white;
     letter-spacing: 1px;
     font-size: 80%;
     text-decoration: none;
     font-style: normal;
-}
+}*/
 
 header li a:hover {
     color: red;
@@ -68,25 +69,30 @@ header li a:hover {
     font-style: italic;
     font-size: 200%;
     text-transform: uppercase;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
 }
 
 /*Formateo al Footer*/
 footer {
-    text-decoration: none;
-    letter-spacing: 2px;
+    /*text-decoration: none;
+    letter-spacing: 2px;*/
     background-image: linear-gradient(to bottom, #141414, black);
-    display: flex;
+
+    /*display: flex;
     flex-direction: column;
-    grid-area: footer;
+    grid-area: footer;*/
 }
 
-footer div {
+
+
+/*footer div {
     margin: 15px;
 }
 
 footer section a img {
     height: 32px;
-}
+}*/
 
 .footer-main {
     padding: 1.25rem 1.875rem;
@@ -175,11 +181,11 @@ p {
     padding: 8px;
 }
 
-a {
+/*a {
     color: white;
     text-decoration: none;
     font-style: oblique;
-}
+}*/
 
 ul {
     list-style-type: none;
@@ -409,4 +415,421 @@ td img {
 
 .galery-iframe {
     justify-self: center;
+}
+
+
+@media (min-width: 768px) {
+    footer {
+        margin-bottom: 0;
+    }
+}
+
+.headerColor {
+    background-image: linear-gradient(to bottom, #343534, #141414)
+}
+
+
+.mainPhoto-container {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.mainPhoto {
+    background: url('../images/queen-maradona.png') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    transition: transform 2s;
+}
+
+.mainPhoto:hover {
+    transform: scale(1.15);
+}
+
+.mainPhoto-stuff {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+a.btn {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 11px 30px;
+    background-color: #636363;
+    background-image: linear-gradient(to bottom, #636363, #000);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a.btn:hover {
+    background-image: linear-gradient(to bottom, #000, #000);
+}
+
+#portada {
+    height: 100vh;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h1.glitch {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    position: relative;
+    font-size: 100px;
+    padding: 30px;
+}
+
+.wrapper h1.glitch::before,
+.wrapper h1.glitch::after {
+    padding: 30px;
+    color: white;
+    content: "Glitch";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    top: 0;
+}
+
+.wrapper h1.glitch::before {
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation-name: glitch-animation-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+}
+
+.wrapper h1.glitch::after {
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+    0% {
+        clip: rect(141px, 350px, 13px, 30px);
+    }
+
+    5% {
+        clip: rect(56px, 350px, 7px, 30px);
+    }
+
+    10% {
+        clip: rect(24px, 350px, 32px, 30px);
+    }
+
+    15% {
+        clip: rect(142px, 350px, 149px, 30px);
+    }
+
+    20% {
+        clip: rect(17px, 350px, 52px, 30px);
+    }
+
+    25% {
+        clip: rect(21px, 350px, 37px, 30px);
+    }
+
+    30% {
+        clip: rect(69px, 350px, 109px, 30px);
+    }
+
+    35% {
+        clip: rect(6px, 350px, 141px, 30px);
+    }
+
+    40% {
+        clip: rect(99px, 350px, 56px, 30px);
+    }
+
+    45% {
+        clip: rect(83px, 350px, 55px, 30px);
+    }
+
+    50% {
+        clip: rect(92px, 350px, 122px, 30px);
+    }
+
+    55% {
+        clip: rect(147px, 350px, 148px, 30px);
+    }
+
+    60% {
+        clip: rect(66px, 350px, 22px, 30px);
+    }
+
+    65% {
+        clip: rect(79px, 350px, 102px, 30px);
+    }
+
+    70% {
+        clip: rect(54px, 350px, 111px, 30px);
+    }
+
+    75% {
+        clip: rect(127px, 350px, 64px, 30px);
+    }
+
+    80% {
+        clip: rect(81px, 350px, 35px, 30px);
+    }
+
+    85% {
+        clip: rect(11px, 350px, 105px, 30px);
+    }
+
+    90% {
+        clip: rect(57px, 350px, 37px, 30px);
+    }
+
+    95% {
+        clip: rect(50px, 350px, 74px, 30px);
+    }
+
+    100% {
+        clip: rect(49px, 350px, 13px, 30px);
+    }
+}
+
+@keyframes glitch-animation-2 {
+    0% {
+        clip: rect(136px, 350px, 5px, 30px);
+    }
+
+    5% {
+        clip: rect(2px, 350px, 11px, 30px);
+    }
+
+    10% {
+        clip: rect(119px, 350px, 138px, 30px);
+    }
+
+    15% {
+        clip: rect(112px, 350px, 140px, 30px);
+    }
+
+    20% {
+        clip: rect(94px, 350px, 59px, 30px);
+    }
+
+    25% {
+        clip: rect(121px, 350px, 137px, 30px);
+    }
+
+    30% {
+        clip: rect(127px, 350px, 81px, 30px);
+    }
+
+    35% {
+        clip: rect(147px, 350px, 99px, 30px);
+    }
+
+    40% {
+        clip: rect(2px, 350px, 22px, 30px);
+    }
+
+    45% {
+        clip: rect(57px, 350px, 74px, 30px);
+    }
+
+    50% {
+        clip: rect(89px, 350px, 56px, 30px);
+    }
+
+    55% {
+        clip: rect(122px, 350px, 95px, 30px);
+    }
+
+    60% {
+        clip: rect(4px, 350px, 132px, 30px);
+    }
+
+    65% {
+        clip: rect(115px, 350px, 42px, 30px);
+    }
+
+    70% {
+        clip: rect(102px, 350px, 65px, 30px);
+    }
+
+    75% {
+        clip: rect(71px, 350px, 117px, 30px);
+    }
+
+    80% {
+        clip: rect(60px, 350px, 98px, 30px);
+    }
+
+    85% {
+        clip: rect(22px, 350px, 23px, 30px);
+    }
+
+    90% {
+        clip: rect(62px, 350px, 35px, 30px);
+    }
+
+    95% {
+        clip: rect(30px, 350px, 2px, 30px);
+    }
+
+    100% {
+        clip: rect(97px, 350px, 62px, 30px);
+    }
+}
+
+@keyframes rightToLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.rightToLeft {
+    animation-name: rightToLeft;
+    animation-duration: 2000ms;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.leftToRight {
+    animation-name: leftToRight;
+    animation-duration: 2000ms;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes upToDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.upToDown {
+    animation-name: upToDown;
+    animation-duration: 2000ms;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes downToUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.downToUp {
+    animation-name: downToUp;
+    animation-duration: 2000ms;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.vert-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
 }
