@@ -438,7 +438,7 @@ td img {
 }
 
 .mainPhoto {
-    background: url('../images/queen-maradona.png') no-repeat center center;
+    background: url('../images/landing/queen-maradona.png') no-repeat center center;
     background-size: cover;
     height: 100%;
     width: 100%;
