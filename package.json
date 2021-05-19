@@ -1,0 +1,44 @@
+{
+  "name": "cuartaentrega",
+  "version": "1.0.0",
+  "description": "Queen Argentina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arinatale/QueenArgentina.git"
+  },
+  "keywords": [
+    "Queen",
+    "fan",
+    "club",
+    "Freddie",
+    "Mercury",
+    "Brian",
+    "May",
+    "Roger",
+    "Taylor",
+    "John",
+    "Deacon",
+    "queen",
+    "en",
+    "argentina",
+    "queen",
+    "en",
+    "velez"
+  ],
+  "author": "Ariel Natale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arinatale/QueenArgentina/issues"
+  },
+  "homepage": "https://github.com/arinatale/QueenArgentina#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
